@@ -4,8 +4,7 @@ from google.oauth2.service_account import Credentials
 import json
 
 def createTable(dataset):
-    client = bigquery.Client(project=None, credentials=Credentials.from_service_account_file
-                        (r"C:\Users\Dell\Desktop\ThS\handy-station-308214-824c524ce43c.json"))
+    client = bigquery.Client()
 
     # Set table_id to the ID of the table to create.
     table_id_health = "handy-station-308214.{}.health_nutrition_population".format(dataset)

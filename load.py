@@ -3,8 +3,7 @@ from google.oauth2.service_account import Credentials
 import json
 
 def load(text):
-    client = bigquery.Client(project=None, credentials=Credentials.from_service_account_file
-                (r"C:\Users\Dell\Desktop\ThS\handy-station-308214-824c524ce43c.json"))
+    client = bigquery.Client()
 
     table_id_health = "handy-station-308214.{}.health_nutrition_population".format(text)
     table_id_areas = "handy-station-308214.{}.country_areas".format(text)

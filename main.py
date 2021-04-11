@@ -13,8 +13,7 @@ from flask import Flask, request, render_template
 
 app = flask.Flask(__name__)
 # bigquery_client = bigquery.Client()
-bigquery_client = bigquery.Client(project=None, credentials=Credentials.from_service_account_file
-            (r"C:\Users\Dell\Desktop\ThS\handy-station-308214-824c524ce43c.json"))
+bigquery_client = bigquery.Client()
 
 
 dataset =""

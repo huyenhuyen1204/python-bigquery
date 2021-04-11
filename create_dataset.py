@@ -7,8 +7,7 @@ import json
 import time
 
 def createDataset(text):
-    client = bigquery.Client(project=None, credentials=Credentials.from_service_account_file
-                (r"C:\Users\Dell\Desktop\ThS\handy-station-308214-824c524ce43c.json"))
+    client = bigquery.Client()
 
     print(client.project)
     # dataset: health
