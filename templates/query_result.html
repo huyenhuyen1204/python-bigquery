@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<h1 style="text-align: center;">Team 15</h1>
+<dev style="padding-left: 50px;">
+Tạo dataset
+<form style="margin-left: 50px; margin-top: 5px;" method="POST">
+    <input name="text">
+    <input type="submit">
+</form>
+</dev>
+
+{% for result in results %}
+<p style="margin-left: 50px; margin-top: 5px;">{{result}}</p>
+{% endfor %}
+
+{% if results %}
+<form dev style="padding-left: 50px;  margin-top: 5px;" action="button">
+    <button type="submit">Upload data to Bigquery</button>
+</form>
+{% endif %}
+
+{% for l in loaded %}
+<p style="margin-left: 50px; margin-top: 5px;">{{l}}</p>
+{% endfor %}
+
+<!-- <form dev style="padding-left: 50px;  margin-top: 5px;" action="view">
+    <button type="submit">View Result</button>
+<form> -->
+<br>
+<dev style="margin-left: 50px;  margin-top: 5px;">
+<a href='/view' class="btn btn-danger">Visualization</a>
+</dev>
+
+
+
+
