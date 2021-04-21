@@ -3,8 +3,8 @@
 
 <style>
     iframe {
-      /* width: 100px;
-      height: 50px; */
+      width: 1100px;
+      height: 500px;
       margin: auto auto;
       /* backgroun d-color: #777; */
       display:block;
@@ -20,7 +20,7 @@
   
 
 <h1 style="text-align: center;">Team 15</h1>
-<h2>1. Mật độ dân số các nước trên thế giới</h2>
+<h2 style="color: red; text-decoration: underline;">1. Phân tích quy mô dân số thế giới</h2>
 <table border="1">
   <tbody>
   <tr>
@@ -75,12 +75,78 @@
   </tbody>
   </table>
   <p dir="ltr">&nbsp;</p>
-<h4 style="text-align: center;">Biểu đồ mật độ dân số các nước trên thế giới</h4>
+<h4 style="text-align: center;">Báo cáo sinh bởi Datastudio</h4>
 <div style="">
-    <iframe width="1000" height="500" src="https://datastudio.google.com/embed/reporting/f9c4d896-a4b6-4e90-bada-d249cdd093f5/page/McLCC" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://datastudio.google.com/embed/reporting/21612c70-004b-41ae-99d5-fb8e97a1258b/page/7CeEC" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div> 
 
-<h2>2. Phân tích độ tuổi kết hôn trung bình của nam giới</h2>
+<h2>2. Phân tích tỷ lệ tăng dân số</h2>
+
+<h4 style="text-align: center;">Báo cáo sinh bởi Datastudio</h4>
+<div style="">
+  <iframe src="https://datastudio.google.com/embed/reporting/230df9a2-8e47-469e-b1cb-1fcd3c17ea4c/page/E7eEC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div> 
+
+<h2>3. Phân tích tỷ lệ dân thành thị</h2>
+
+<h4 style="text-align: center;">Báo cáo sinh bởi Datastudio</h4>
+<div style="">
+  <iframe src="https://datastudio.google.com/embed/reporting/7db58ad0-211d-4ac2-a5ad-5a9e86f85b21/page/BJfEC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div> 
+
+<h2>4. Phân tích tỷ lệ người lớn thừa cân</h2>
+
+<h4 style="text-align: center;">Báo cáo sinh bởi Datastudio</h4>
+<div style="">
+  <iframe src="https://datastudio.google.com/embed/reporting/e9af7206-895c-4d28-8176-b468642d9582/page/OSfEC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div> 
+
+<h2>5. Phân tích độ tuổi kết hôn trung bình của nữ giới</h2>
+<!-- <table style=" height: 533px;width: 800px;margin-left: auto;margin-right: auto;" border="1">
+  <tbody>
+  <tr>
+  <td style="text-align: center;"><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><strong>Query</strong></span></td>
+  </tr>
+  <tr>
+  <td>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">SELECT&nbsp;</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;cs.table_name,</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;cs.two_alpha_code,</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;jt.average&nbsp;</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">FROM&nbsp;</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;<span style="color: #008000;">&nbsp;`handy-station-308214.health.country_summary`</span> <span style="color: #0000ff;">AS </span>cs</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">INNER JOIN</span>(</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">SELECT</span></span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;cs.two_alpha_code,</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">ROUND</span>(<span style="color: #0000ff;">AVG</span>(hnp.value),2)<span style="color: #0000ff;">AS </span>average</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;<span style="color: #0000ff;">FROM</span></span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #008000;">`handy-station-308214.health.country_summary`&nbsp;</span><span style="color: #0000ff;">AS </span>cs</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">LEFT JOIN&nbsp;</span><span style="color: #008000;">`handy-station-308214.health.health_nutrition_population`</span> <span style="color: #0000ff;">AS </span>hnp</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;ON hnp.country_code = cs.country_code</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;<span style="color: #0000ff;">WHERE</span></span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;hnp.indicator_code = <span style="color: #008000;">"SP.DYN.SMAM.FE"</span></span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">AND </span>hnp.year &gt;2000</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">AND </span>hnp.value &gt;1.5</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;<span style="color: #0000ff;">GROUP</span> <span style="color: #0000ff;">BY</span></span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;cs.two_alpha_code</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;<span style="color: #0000ff;">ORDER</span> <span style="color: #0000ff;">BY</span></span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;average</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;)<span style="color: #0000ff;">AS </span>jt</span></p>
+  <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">ON </span>cs.two_alpha_code = jt.two_alpha_code</span></p>
+  <p><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;</span></p>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p dir="ltr">&nbsp;</p> -->
+
+<h4 style="text-align: center;">Báo cáo sinh bởi Datastudio</h4>
+<div style="">
+  <iframe src="https://datastudio.google.com/embed/reporting/c940fedd-c6a0-4b93-bab9-e3aa3138c53e/page/defEC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+<h2 style ="color: red; text-decoration: underline;">6. Phân tích độ tuổi kết hôn trung bình của nam giới</h2>
 <table  border="1">
   <tbody>
   <tr>
@@ -89,59 +155,25 @@
   </tr>
   <tr>
   <td>
-  <p><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">SELECT </span><br /><span style="font-family: 'courier new', courier; font-size: small;">&nbsp; &nbsp;cs.table_name,</span><br /><span style="font-family: 'courier new', courier; font-size: small;">&nbsp; &nbsp;cs.two_alpha_code,</span><br /><span style="font-family: 'courier new', courier; font-size: small;">&nbsp; &nbsp;jt.average </span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">FROM </span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #008000;">&nbsp; &nbsp;`handy-station-308214.health.country_summary`&nbsp;</span><span style="color: #0000ff;">AS</span> cs</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">INNER JOIN</span> (</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">&nbsp;SELECT</span><br /><span style="font-family: 'courier new', courier; font-size: small;">&nbsp; cs.two_alpha_code,</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; ROUND</span>(<span style="color: #0000ff;">AVG</span>(hnp.value),2) <span style="color: #0000ff;">AS</span> average</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> FROM</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #008000;">&nbsp; `handy-station-308214.health.country_summary`</span> <span style="color: #0000ff;">AS</span> cs</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; LEFT JOIN</span> <span style="color: #008000;">`handy-station-308214.health.health_nutrition_population`</span> AS hnp</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; ON</span> hnp.country_code = cs.country_code</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> WHERE</span><br /><span style="font-family: 'courier new', courier; font-size: small;">&nbsp; hnp.indicator_code = <span style="color: #008000;">"SP.DYN.SMAM.MA"</span></span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; AND</span> hnp.year &gt; 2000</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; AND</span> hnp.value &gt; 1.5</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> GROUP BY</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> cs.two_alpha_code</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> ORDER BY</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> average</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> ) <span style="color: #0000ff;">AS</span> jt</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">ON</span> cs.two_alpha_code = jt.two_alpha_code</span></p>
+  <p><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">SELECT </span><br />
+    <span style="font-family: 'courier new', courier; font-size: small;">&nbsp; &nbsp;cs.table_name,</span><br />
+    <span style="font-family: 'courier new', courier; font-size: small;">&nbsp; &nbsp;cs.two_alpha_code,</span><br />
+    <span style="font-family: 'courier new', courier; font-size: small;">&nbsp; &nbsp;jt.average </span><br />
+    <span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">FROM </span><br />
+    <span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #008000;">&nbsp; &nbsp;`handy-station-308214.health.country_summary`&nbsp;</span><span style="color: #0000ff;">AS</span> cs</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">INNER JOIN</span> (</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">&nbsp;SELECT</span><br /><span style="font-family: 'courier new', courier; font-size: small;">&nbsp; cs.two_alpha_code,</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; ROUND</span>(<span style="color: #0000ff;">AVG</span>(hnp.value),2) <span style="color: #0000ff;">AS</span> average</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> FROM</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #008000;">&nbsp; `handy-station-308214.health.country_summary`</span> <span style="color: #0000ff;">AS</span> cs</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; LEFT JOIN</span> <span style="color: #008000;">`handy-station-308214.health.health_nutrition_population`</span> AS hnp</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; ON</span> hnp.country_code = cs.country_code</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> WHERE</span><br /><span style="font-family: 'courier new', courier; font-size: small;">&nbsp; hnp.indicator_code = <span style="color: #008000;">"SP.DYN.SMAM.MA"</span></span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; AND</span> hnp.year &gt; 2000</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">&nbsp; AND</span> hnp.value &gt; 1.5</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> GROUP BY</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> cs.two_alpha_code</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> ORDER BY</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> average</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> ) <span style="color: #0000ff;">AS</span> jt</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">ON</span> cs.two_alpha_code = jt.two_alpha_code</span></p>
   <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;</span></p>
   </td>
   <td>
-  <p><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">SELECT</span></p>
-  <p><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; &nbsp;cs.table_name,</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; &nbsp;cs.two_alpha_code,</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; &nbsp;ROUND</span>(<span style="color: #0000ff;">AVG</span>(jt.average),2)</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;" data-mce-mark="1">FROM </span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #008000;">&nbsp; &nbsp;`handy-station-308214.health.country_summary`</span> <span style="color: #0000ff;">AS</span> cs</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">INNER JOIN</span> (</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;" data-mce-mark="1">&nbsp;SELECT</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; cs.two_alpha_code,</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; hnp.value <span style="color: #0000ff;">AS</span> average</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;" data-mce-mark="1"> FROM</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #008000;">&nbsp; `handy-station-308214.health.health_nutrition_population`</span> <span style="color: #0000ff;">AS</span> hnp</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; LEFT JOIN</span> <span style="color: #008000;">`handy-station-308214.health.country_summary`</span> <span style="color: #0000ff;">AS</span> cs</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; ON</span> hnp.country_code = cs.country_code</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;" data-mce-mark="1"> WHERE</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; hnp.indicator_code = <span style="color: #008000;">"SP.DYN.SMAM.FE"</span></span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; AND</span> hnp.year &gt; 2000</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; AND</span> hnp.value &gt; 1.5</span></p>
-  <p><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">ORDER BY</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> average</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> ) <span style="color: #0000ff;">AS</span> jt</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">ON</span> cs.two_alpha_code = jt.two_alpha_code </span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> GROUP BY</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> cs.two_alpha_code, cs.table_name</span></p>
+  <p><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">SELECT</span><br />
+  <span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; &nbsp;cs.table_name,</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; &nbsp;cs.two_alpha_code,</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; &nbsp;ROUND</span>(<span style="color: #0000ff;">AVG</span>(jt.average),2)</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;" data-mce-mark="1">FROM </span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #008000;">&nbsp; &nbsp;`handy-station-308214.health.country_summary`</span> <span style="color: #0000ff;">AS</span> cs</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">INNER JOIN</span> (</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;" data-mce-mark="1">&nbsp;SELECT</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; cs.two_alpha_code,</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; hnp.value <span style="color: #0000ff;">AS</span> average</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;" data-mce-mark="1"> FROM</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #008000;">&nbsp; `handy-station-308214.health.health_nutrition_population`</span> <span style="color: #0000ff;">AS</span> hnp</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; LEFT JOIN</span> <span style="color: #008000;">`handy-station-308214.health.country_summary`</span> <span style="color: #0000ff;">AS</span> cs</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; ON</span> hnp.country_code = cs.country_code</span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;" data-mce-mark="1"> WHERE</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1">&nbsp; hnp.indicator_code = <span style="color: #008000;">"SP.DYN.SMAM.MA"</span></span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; AND</span> hnp.year &gt; 2000</span><br /><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><span style="color: #0000ff;">&nbsp; AND</span> hnp.value &gt; 1.5</span><br />
+  <span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">ORDER BY</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> average</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> ) <span style="color: #0000ff;">AS</span> jt</span><br /><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">ON</span> cs.two_alpha_code = jt.two_alpha_code </span><br /><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;"> GROUP BY</span><br /><span style="font-family: 'courier new', courier; font-size: small;"> cs.two_alpha_code, cs.table_name</span></p>
   </td>
   </tr>
   </tbody>
   </table>
   <p dir="ltr">&nbsp;</p>
 
-  <h2>3. Phân tích độ tuổi kết hôn trung bình của nữ giới</h2>
-  <table style=" height: 533px;width: 800px;margin-left: auto;margin-right: auto;" border="1">
-      <tbody>
-      <tr>
-      <td style="text-align: center;"><span style="font-family: 'courier new', courier; font-size: small;" data-mce-mark="1"><strong>Query</strong></span></td>
-      </tr>
-      <tr>
-      <td>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">SELECT&nbsp;</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;cs.table_name,</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;cs.two_alpha_code,</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;jt.average&nbsp;</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small; color: #0000ff;">FROM&nbsp;</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;<span style="color: #008000;">&nbsp;`handy-station-308214.health.country_summary`</span> <span style="color: #0000ff;">AS </span>cs</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">INNER JOIN</span>(</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">SELECT</span></span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;cs.two_alpha_code,</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">ROUND</span>(<span style="color: #0000ff;">AVG</span>(hnp.value),2)<span style="color: #0000ff;">AS </span>average</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;<span style="color: #0000ff;">FROM</span></span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #008000;">`handy-station-308214.health.country_summary`&nbsp;</span><span style="color: #0000ff;">AS </span>cs</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">LEFT JOIN&nbsp;</span><span style="color: #008000;">`handy-station-308214.health.health_nutrition_population`</span> <span style="color: #0000ff;">AS </span>hnp</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;ON hnp.country_code = cs.country_code</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;<span style="color: #0000ff;">WHERE</span></span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;hnp.indicator_code = <span style="color: #008000;">"SP.DYN.SMAM.MA"</span></span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">AND </span>hnp.year &gt;2000</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000ff;">AND </span>hnp.value &gt;1.5</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;<span style="color: #0000ff;">GROUP</span> <span style="color: #0000ff;">BY</span></span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;cs.two_alpha_code</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;<span style="color: #0000ff;">ORDER</span> <span style="color: #0000ff;">BY</span></span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;average</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;&nbsp;)<span style="color: #0000ff;">AS </span>jt</span></p>
-      <p dir="ltr"><span style="font-family: 'courier new', courier; font-size: small;"><span style="color: #0000ff;">ON </span>cs.two_alpha_code = jt.two_alpha_code</span></p>
-      <p><span style="font-family: 'courier new', courier; font-size: small;">&nbsp;</span></p>
-      </td>
-      </tr>
-      </tbody>
-      </table>
-
-
-
-
-
-    
+<h4 style="text-align: center;">Báo cáo sinh bởi Datastudio</h4>
+<div style="">
+  <iframe src="https://datastudio.google.com/embed/reporting/fad9fec4-fb3e-402e-bcce-97283b163438/page/vKgEC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>    
